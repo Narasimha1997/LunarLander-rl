@@ -74,8 +74,12 @@ class DQNAgentInitializer():
 
 memory, policy = RLInit(memory = 500000, eps = 1.0, window_size = 1).getEpsPolicyAndMemory()
 
+<<<<<<< HEAD
 model.load_weights('./Weights/Episode840.hdf5')
 model.save('Eps840.h5')
+=======
+model.load_weights('./Weights/weights.hdf5')
+>>>>>>> 29bdbdfe2117d45f7316cda3de21e1dfaf76fc66
 
 dqn = DQNAgentInitializer(
     model = model,
@@ -89,4 +93,8 @@ eps = input('Enter the number of episodes to test: ')
 
 dqn.test(env, nb_episodes = int(eps), visualize=True)
 
+<<<<<<< HEAD
  
+=======
+ 
+>>>>>>> 29bdbdfe2117d45f7316cda3de21e1dfaf76fc66

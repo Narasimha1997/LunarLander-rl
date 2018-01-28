@@ -80,9 +80,15 @@ class DQNAgentInitializer():
             model = self.model, 
             policy = self.policy,
             nb_steps_warmup = 10,
+<<<<<<< HEAD
             target_model_update = 1e-2,
             nb_actions = self.action,
             memory = self.memory,
+=======
+            nb_actions = self.action,
+            memory = self.memory,
+            target_model_update = 1e-2,
+>>>>>>> 29bdbdfe2117d45f7316cda3de21e1dfaf76fc66
             enable_double_dqn=False
         )
         return agent
